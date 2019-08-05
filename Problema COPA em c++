@@ -1,0 +1,27 @@
+#include <stdlib.h>
+#include <stdio.h>
+int main(){
+int k,l;
+printf("Digite a posicao do Mestre Kung:");
+scanf("%d",&k);
+if((k >=1) && (k<=16)){
+	printf("\nDigite a posicao do Mestre Lu:");
+	scanf("%d",&l);
+	if((l >=1) && (l<=16)&& (l!=k)){
+		if ((l-k)== 1){
+			printf("\noitavas");
+		}else if(((l-k) >= 2) && ((l-k) < 4)){
+			printf("\nquartas");
+		}else if(((l-k) >= 4) && ((l-k) < 10)) {
+			printf("\nsemifinal");
+		}else{
+			printf("\nfinal");
+			}
+		}else {
+			printf("numero invalido");
+		}	
+	}else{
+		printf("numero invalido");
+		}
+	}
+/*Nesse codigo foi usado o if else para definir os limites das variaveis k e l. O mesmo if else foi usado para comparar o k e l atraves de uma subtração e comparação do resultado com o numeros fixos usados para em qual if else o codigo deveria prosseguir.*/
