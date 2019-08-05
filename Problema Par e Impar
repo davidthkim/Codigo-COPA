@@ -1,0 +1,47 @@
+#include <stdlib.h>
+#include <stdio.h>
+int main(){	
+ int p, d_1, d_2;
+ 
+printf("Digite 0 se Alice gritou par ou 1 se Bob gritou par:");
+scanf("%d",&p);
+switch (p)
+{
+   case 0:
+	    printf("\nQuantos dedos Alice deixou estendidos:");
+			scanf("%d",&d_1);
+			if((d_1>=0)&&(d_1<=5)){
+				printf("\nQuantos dedos Bob deixou estendidos:");
+				scanf("%d",&d_2);
+				if((d_1 + d_2)%2 == 0 ){
+					printf("0");
+				}else{
+					printf("1");
+				}
+			}else{
+				printf("\nNumero Invalido.");
+			}
+   break;
+   case 1:
+     printf("\nQuantos dedos Alice deixou estendidos:");
+			scanf("%d",&d_1);
+			if((d_1>=0)&&(d_1<=5)){
+				printf("\nQuantos dedos Bob deixou estendidos:");
+				scanf("%d",&d_2);
+				if((d_1 + d_2)%2 == 0 ){
+					printf("1");
+				}else{
+					printf("0");
+				}
+			}else{
+				printf("\nNumero Invalido.");
+			}
+   break;
+
+   default :
+     printf("\nNumero Invalido.");
+}
+
+}
+//https://olimpiada.ic.unicamp.br/pratique/pj/2016/f1/jogo/
+/*Foi usado o comando Switch Case para definir quem escolheu o par seja ele Bob ou Amanda e foi usado o comando if else para definir os limites e comparar as variaveis d_1 e d_2  */
